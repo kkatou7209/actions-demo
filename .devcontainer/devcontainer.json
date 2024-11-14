@@ -1,0 +1,14 @@
+{
+    "name": "GitHub Actions Demo",
+    "dockerComposeFile": "./compose.yml",
+    "service": "node",
+    "workspaceFolder": "/workspace",
+    "postCreateCommand": "npm i -g bun",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "vue.volar"
+            ]
+        }
+    }
+}

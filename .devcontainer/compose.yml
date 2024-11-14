@@ -1,0 +1,13 @@
+name: github-actions-demo
+
+services:
+  node:
+    container_name: github-actions-demo-node
+    image: node:23
+    volumes:
+      - ../:/workspace:cached
+      - gha-node_modules:/workspace/node_modules
+    tty: true
+
+volumes:
+  gha-node_modules:
